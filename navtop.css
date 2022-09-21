@@ -31,7 +31,8 @@ header{
 }
 nav ul{
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 20px;
     font-weight: 700;
 }
 nav{
@@ -47,8 +48,7 @@ main{
 }
 #hero{
     margin-top: 65px;
-    padding: 70px 0px;
-    max-width: 1200px;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,4 +101,88 @@ main{
 a:hover{
     color:#eee;
     cursor: pointer;
+}
+.menuimg{
+    height: 40px;
+}
+.menu{
+    position: absolute;
+    top: 55px;
+    background-color: #DA0037;
+    right: 0;
+    z-index: 2;
+    display: none;
+    font-weight: 700;
+    padding: 8px;
+}
+#menu-toggle{
+    display: none;
+}
+#menu-toggle:checked+.menu{
+    display: flex;
+}
+.menu-label{
+    display: none;
+}
+@media (max-width:992px){
+#hero{
+    max-width: 90%;
+    min-width: 800px;
+}
+.burgerinfo h1{
+    width: 100%;
+    min-width: unset;
+}
+.burger3{
+    height: 150px;
+}
+.burgerinfo p{
+    font-size: 18px;
+    width: 90%;
+}
+.secondsection{
+    max-width: 70%;
+}
+.lista{
+    display: none;
+}
+.menu-label{
+    display: flex;
+}
+}
+@media (max-width:552px){
+header{
+    height: 30px;
+}
+.logo{
+    height:25px;
+}
+.menuimg{
+    height: 25px;
+    align-items: center;
+}
+.menu{
+    top:30px;
+}
+#hero{
+    max-width: 90%;
+    min-width: unset;
+}
+.burger3{
+    height: 100px;
+}
+.burgerinfo h1{
+    max-width: 90%;
+    min-width: none;
+    font-size: 18px;
+
+}
+.burgerinfo p{
+    min-width: none;
+    font-size: 12px;
+}
+.secondsection{
+    min-width: none;
+    font-size: 12px;
+}
 }
