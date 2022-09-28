@@ -242,6 +242,8 @@ footer a{
 }
 .footerlist{
     gap: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 }
 @media (max-width:600px){
