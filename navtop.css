@@ -40,9 +40,6 @@ nav ul{
     gap: 20px;
     font-weight: 700;
 }
-nav ul:hover{
-    animation: scale 1s;
-}
 nav{
     gap: 30px;
 }
@@ -243,6 +240,9 @@ footer a{
 .menu-label{
     display: flex;
 }
+.footerlist{
+    gap: 10px;
+}
 }
 @media (max-width:600px){
 header{
@@ -318,6 +318,6 @@ footer{
     bottom: 0;
 }
 .footerlist img{
-    height: 30px;
+    height: 20px;
 }
 }
