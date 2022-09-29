@@ -7,12 +7,14 @@
     list-style-type: none;
     font-family:'Poppins',sans-serif;
 }
+html{
+    overflow-x: hidden;
+    height: 100%;
+}
 body{
     background-color: #171717;
     background-image: url(/logo3.png);
     background-repeat: repeat;
-    height: 100%;
-    width: 100%;
 }
 body a{
     color: #171717;
@@ -29,6 +31,7 @@ header{
     padding: 15px;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 .logo{
     height: 40px;
@@ -194,6 +197,51 @@ a:hover{
     width: 100%;
     justify-content: center;
 }
+.novedades{
+    display: flex;
+    justify-content: center;
+    font-weight:800;
+}
+.cards2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:10px;
+    padding: 20px;
+}
+.cardnov{
+    background-color: #DA0037;
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+.cardnov:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.cardnov span{
+    color: black;
+    font-weight: 800;
+    padding: 1rem;
+}
+.cardnov img{
+    height: 180px;
+    width: 180px;
+    padding: 1rem;
+}
+.card2{
+    display: flex;
+    background-color: #DA0037;
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+}
 footer{
     display: flex;
     width: 100%;
@@ -250,7 +298,7 @@ footer a{
     justify-content: space-around;
 }
 .footerlist img{
-    height: 18px;
+    height: 10px;
 }
 }
 @media (max-width:576px){
