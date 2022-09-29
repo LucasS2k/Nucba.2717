@@ -297,8 +297,8 @@ footer a{
     display: flex;
     justify-content: space-around;
 }
-.footerlist img{
-    height: 10px;
+.footerlogos img{
+    height: 16px;
 }
 }
 @media (max-width:576px){
@@ -367,5 +367,8 @@ header{
 }
 .card a{
     justify-content: baseline;
+}
+footer{
+    font-size: 12px;
 }
 }
