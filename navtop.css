@@ -13,8 +13,6 @@ html{
 }
 body{
     background-color: #171717;
-    background-image: url(/logo3.png);
-    background-repeat: repeat;
 }
 body a{
     color: #171717;
@@ -122,6 +120,8 @@ a:hover{
     display: none;
     font-weight: 700;
     padding: 8px;
+    gap: 5px;
+    font-size: 12px;
 }
 #menu-toggle{
     display: none;
@@ -181,22 +181,6 @@ a:hover{
     width: 100%;
     justify-content: center;
 }
-.divmenu{
-    display: flex;
-    flex-direction: column;
-    background-color: #DA0037;
-    color: #171717;
-    width: 100%;
-    margin-top: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-.menulist{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-}
 .novedades{
     display: flex;
     justify-content: center;
@@ -210,6 +194,9 @@ a:hover{
     width: 100%;
     gap:10px;
     padding: 20px;
+}
+.novedades{
+    padding: 1rem;
 }
 .cardnov{
     background-color: #DA0037;
@@ -228,7 +215,7 @@ a:hover{
 .cardnov span{
     color: black;
     font-weight: 800;
-    padding: 1rem;
+    margin: 1rem;
 }
 .cardnov img{
     height: 180px;
@@ -244,10 +231,10 @@ a:hover{
 }
 footer{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height:60px;
-    align-items: center;
-    justify-content: space-around;
+    height:auto;
+    justify-content:center;
     background-color: #444444;
     font-weight: 600;
     bottom: 0;
@@ -257,11 +244,12 @@ footer a{
 }
 .footerlist{
     display: flex;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 8px;
 }
 .footerlogos{
     display: flex;
+    justify-content: center;
     gap:15px;
 }
 .footerlogos img{
@@ -270,10 +258,10 @@ footer a{
 @media (max-width:992px){
 #hero{
     max-width: 90%;
-    min-width: 800px;
+    min-width: 700px;
 }
 .burgerinfo h1{
-    width: 100%;
+    width: 90%;
     min-width: unset;
 }
 .burger3{
@@ -292,21 +280,23 @@ footer a{
 .menu-label{
     display: flex;
 }
+.container{
+    width: auto;
+    height: auto;
+}
+.novedades{
+    font-size: 16px;
+}
 .footerlist{
     gap: 10px;
-    display: flex;
-    justify-content: space-around;
 }
 .footerlogos img{
     height: 16px;
 }
-footer{
-    gap: 10px;
-    padding-left: 10px;
-}
 }
 @media (max-width:576px){
 header{
+    width: 100%;
     height: 40px;
 }
 .logo{
@@ -337,18 +327,16 @@ header{
     font-size: 12px;
 }
 .secondsection{
+    max-width: 70%;
     min-width: none;
     font-size: 12px;
 }
 .container{
-    width: 90%;
-    min-width: none;
-    height: 500px;
-    display: flex;
+    max-width: 90%;
+    height: auto;
     margin: 10px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 .container .card{
     width: 150px;
@@ -359,7 +347,6 @@ header{
     transition: all 0.25;
 }
 .card{
-    display: flex;
     flex-direction: column;
     border-radius: 1rem;
     overflow: hidden;
@@ -369,10 +356,25 @@ header{
     color:black;
     font-size: 12px;
 }
-.card a{
-    justify-content: baseline;
+.cards2{
+    flex-direction: column;
+}
+.cardnov{
+    width: 80%;
+    font-size: 12px;
+}
+.cardnov img{
+    height: 90%; 
+    width: 90%;
 }
 footer{
+    gap: 5px;
     font-size: 12px;
+}
+.footerlist{
+    gap: 5px;
+}
+.footerlogos{
+    gap: 5px;
 }
 }
