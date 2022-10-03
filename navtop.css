@@ -10,6 +10,7 @@
 html{
     overflow-x: hidden;
     height: 100%;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #171717;
@@ -320,7 +321,6 @@ header{
     max-width: 90%;
     min-width: none;
     font-size: 18px;
-
 }
 .burgerinfo p{
     min-width: none;
