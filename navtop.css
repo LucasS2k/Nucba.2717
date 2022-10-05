@@ -274,14 +274,14 @@ footer a{
 }
 @keyframes slide-left{
     from{
-        transform: translateX(200px);
+        transform: translateX(-300px);
     }
     to{
         transform: translateX(0);
     }
 }
 .burger3{
-    animation: slide-left 1s ease-in;
+    animation: slide-left 1s ease-out;
 }
 @media (max-width:992px){
 #hero{
