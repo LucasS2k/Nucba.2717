@@ -283,6 +283,17 @@ footer a{
 .burger3{
     animation: slide-left 1s ease-out;
 }
+@keyframes slide-down{
+    from{
+        transform: translateY(-150px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+h1{
+    animation: slide-down 0.8s ease-out;
+}
 @media (max-width:992px){
 #hero{
     max-width: 90%;
