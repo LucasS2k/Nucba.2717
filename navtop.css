@@ -272,6 +272,15 @@ footer a{
     gap:15px;
     font-size: 30px;
 }
+.facebook:hover{
+    color:#3b5998;
+}
+.whatsapp:hover{
+    color: #075e54;
+}
+.instagram:hover{
+    color: #C13584;
+}
 @keyframes slide-left{
     from{
         transform: translateX(-300px);
